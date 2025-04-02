@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { RingLoader } from "react-spinners";
-import { selectLoading } from "../../redux/contactsSlice";
 import css from "./Loader.module.css";
+import { selectLoading } from "../../redux/contacts/selectors";
 
 const override = {
   display: "block",
