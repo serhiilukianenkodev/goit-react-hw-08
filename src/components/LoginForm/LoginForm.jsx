@@ -4,7 +4,7 @@ import { Form, Field, Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import css from "./LoginForm.module.css";
 
-export const LoginForm = () => {
+const LoginForm = () => {
   const dispatch = useDispatch();
 
   const initialValues = {
@@ -54,3 +54,5 @@ export const LoginForm = () => {
     </div>
   );
 };
+
+export default LoginForm;

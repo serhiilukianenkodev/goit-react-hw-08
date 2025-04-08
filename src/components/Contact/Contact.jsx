@@ -1,4 +1,6 @@
 import css from "./Contact.module.css";
+import IconButton from "@mui/material/IconButton";
+import DeleteIcon from "@mui/icons-material/Delete";
 import { FaUserAstronaut } from "react-icons/fa6";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { useDispatch } from "react-redux";
@@ -22,9 +24,9 @@ const Contact = ({ contact }) => {
             {contact.number}
           </p>
         </div>
-        <button className={css.deleteBtn} type="button" onClick={handleDelete}>
-          Delete
-        </button>
+        <IconButton aria-label="delete" onClick={handleDelete}>
+          <DeleteIcon />
+        </IconButton>
       </div>
     </li>
   );

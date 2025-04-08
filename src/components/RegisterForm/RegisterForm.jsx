@@ -4,7 +4,7 @@ import { Form, Field, Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import css from "./RegisterForm.module.css";
 
-export const RegisterForm = () => {
+const RegisterForm = () => {
   const dispatch = useDispatch();
 
   const handleSubmit = (values, options) => {
@@ -54,3 +54,5 @@ export const RegisterForm = () => {
     </div>
   );
 };
+
+export default RegisterForm;

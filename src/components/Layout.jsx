@@ -1,8 +1,8 @@
 import { Suspense } from "react";
-import { Outlet } from "react-router-dom";
-import { AppBar } from "./AppBar/AppBar";
+// import { Outlet } from "react-router-dom";
+import AppBar from "./AppBar/AppBar";
 
-export const Layout = ({ children }) => {
+const Layout = ({ children }) => {
   return (
     <div style={{ margin: "0 auto", padding: "0 16px" }}>
       <AppBar />
@@ -10,3 +10,5 @@ export const Layout = ({ children }) => {
     </div>
   );
 };
+
+export default Layout;

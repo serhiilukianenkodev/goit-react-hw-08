@@ -8,8 +8,10 @@ import { selectIsLoggedIn } from "../redux/auth/selectors";
  * - Otherwise render the component
  */
 
-export const RestrictedRoute = ({ component: Component, redirectTo = "/" }) => {
+const RestrictedRoute = ({ component: Component, redirectTo = "/" }) => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
 
   return isLoggedIn ? <Navigate to={redirectTo} /> : Component;
 };
+
+export default RestrictedRoute;
