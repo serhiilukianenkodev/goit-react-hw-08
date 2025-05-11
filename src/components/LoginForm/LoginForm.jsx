@@ -3,6 +3,7 @@ import { logIn } from "../../redux/auth/operations";
 import { Form, Field, Formik, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import css from "./LoginForm.module.css";
+import toast from "react-hot-toast";
 
 const LoginForm = () => {
   const dispatch = useDispatch();
@@ -21,10 +22,10 @@ const LoginForm = () => {
     dispatch(logIn(values))
       .unwrap()
       .then(() => {
-        console.log("login success");
+        toast.success("login success");
       })
       .catch(() => {
-        console.log("login error");
+        toast.error("login error");
       });
 
     options.resetForm();
