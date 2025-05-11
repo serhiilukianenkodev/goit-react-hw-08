@@ -17,7 +17,6 @@ function ContactsPage() {
 
   return (
     <>
-      {/* <DocumentTitle>Your contacts</DocumentTitle> */}
       <h1>Phonebook</h1>
       <ContactForm />
       <SearchBox />
